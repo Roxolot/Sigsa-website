@@ -1,0 +1,353 @@
+* {
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+}
+button:active {
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+}
+
+.section {
+    margin-top: 4em;
+    margin-bottom: 4em;
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+}
+
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 90%;
+    display: block;
+}
+
+.column {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+/* navbar */
+
+
+
+
+.navbar {
+    color: white;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    /* margin: 0 64px; */
+    padding: 24px 0px;
+    align-items: center;
+    width: 100%;
+    height: 96px;
+    background-color: transparent;
+}
+
+/* .navbar-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+} */
+
+.navbar-container {
+    width: 100%;
+    max-width: 1200px; /* o lo que prefieras */
+    margin: 0 auto; /* ✅ Esto centra horizontalmente */
+    padding: 0 32px; /* ✅ Espacio a los lados */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.navbar-menu-items {
+    
+    display: flex;
+    gap: 41px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    gap: 41px;
+    justify-content: end;
+}
+
+.navbar-menu-items li {
+    cursor: pointer;
+    
+}
+
+.navbar-cta-button {
+    background-color: #0099FA;
+    color: white;
+    font-weight: bolder;
+    border-radius: 8px;
+    height: 43px;
+    width: 206px;
+    font-size: 16px;
+}
+
+/* hero */
+
+
+.hero-section {
+    margin: 0;
+    padding: 0;
+}
+
+
+.hero {
+    height: 100vh;
+    width: auto;
+    justify-content: center;
+    align-items: start;
+    margin-left: 128px;
+    padding-top: 0;
+    margin: 0;
+    color: white;
+}
+
+.hero-bg {
+    background-image: url("./img/bg-hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    position: relative;
+    
+}
+
+.hero-bg::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(8, 33, 41, 0.7);
+    position: absolute;
+}
+
+
+.hero-container {
+    width: 664px;
+    height: 335px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* gap: 1.5rem; */
+    margin-left: 64px;
+    padding: 2rem;
+    z-index: 2;
+}
+.hero-primary-text {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    font-weight: bold;
+}
+
+
+.hero-primary-text p {
+    text-align: start;
+    font-size: 42px;
+}
+
+.hero-secondary-text {
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: -32px;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+.hero-secondary-text p {
+    text-align: start;
+    font-size: 28px;
+}
+
+.hero-cta-button button {
+    background-color: #0099FA;
+    color: white;
+    font-weight: bolder;
+    border-radius: 8px;
+    height: 90px;
+    width: 420px;
+    font-size: 38px;
+}
+
+/* about us */
+
+.about-us-title {
+    display: flex;
+    gap: 24px;
+    width: 30%;
+    font-size: 24px;
+}
+
+.about-us-text {
+    font-size: 16px;
+    width: 80%;
+}
+
+/* porque elegirnos */
+
+.elegirnos-title {
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.choose {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.choose-card {
+    width: 228px;
+    height: 221px;
+    border-right: 2px solid black;
+}
+
+.choose-card:last-child {
+    border-right: none;
+}
+
+.choose-card-container {
+    width: 196px;
+    height: 155px;
+}
+
+/* .choose-card-image {
+
+} */
+
+.choose-card-image p {
+    font-size: 16px;
+}
+
+.choose-card-text p{
+    font-size: 14px;
+}
+
+/* tipos de servicios */
+
+.services-card-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.services-card {
+    font-size: 38px;
+    min-width: 300px;
+    flex: 1;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    /* border-radius: 12px; */
+    /* background-image: url("./img/bg-hero.png"); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.services-card button {
+    font-weight: bolder;
+    color: white;
+    border-radius: 8px;
+}
+
+.proteccion-personal {
+    background-image: url("./img/proteccion\ personal.jpg");
+
+}
+.proteccion-empresarial {
+    background-image: url("./img/proteccion\ empresarial.jpg");
+
+}
+
+.fianzas {
+    background-image: url("./img/fianzas.jpg");
+}
+
+.services-card button {
+    background-color: #0099FA;
+    width: 197px;
+    height: 46px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+/* formulario */
+
+.contact-text {
+    font-size: 28px;
+
+}
+
+.form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.form-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
