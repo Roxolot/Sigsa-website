@@ -376,6 +376,7 @@ html, body {
 .form-section {
     margin: 0;
     padding: 0;
+    
 }
 
 .form-bg {
@@ -402,7 +403,7 @@ html, body {
     margin-top: 0;
     margin-bottom: 0;
     height: 100%;
-    height: 100vh;
+    height: auto;
     width: auto;
     display: flex;
     flex-direction: column;
@@ -441,6 +442,7 @@ html, body {
     flex: 1;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 16px;
 }
 
@@ -461,6 +463,56 @@ html, body {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
+}
+
+/* .form-right input:last-child{
+    width: 16px;
+    height: auto;
+
+} */
+
+.enviar {
+    display: flex;
+    flex-direction: column;
+    /* height: 128px; */
+    align-items: left;
+    justify-content: center;
+    
+}
+.terminos {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 8px;
+}
+
+.terminos input {
+    width: 16px;
+    height: 16px;
+}
+.terminos input:checked {
+    background-color: #0099FA;
+    
+    /* all: unset;
+    appearance: auto;
+    -webkit-appearance: checkbox;
+    display: inline-block;
+    width: 16px;
+    height: 16px; */
+}
+
+.form-right button {
+    font-size: 18px;
+    font-weight: bold;
+    width: 120px;
+    height: auto;
+    padding: 12px 24px;
+    background-color: #0099FA;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+
 }
 
 .select-form {
@@ -490,15 +542,8 @@ html, body {
     min-height: 100px;
 }
 
-.form-right button {
-    padding: 12px 24px;
-    background-color: #0099FA;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
 
-}
+
 
 .form-right button:active{
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
