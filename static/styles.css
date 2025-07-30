@@ -215,6 +215,10 @@ html, body {
 
 /* about us */
 
+.about-us-column {
+    color: #1F3819;
+}
+
 .about-us-title {
     display: flex;
     gap: 24px;
@@ -227,6 +231,7 @@ html, body {
     width: 80%;
 }
 
+
 /* porque elegirnos */
 
 .elegirnos-title {
@@ -237,6 +242,8 @@ html, body {
 .choose {
     display: flex;
     flex-direction: column;
+    color: #1F3819;
+    
 }
 
 .card-container {
@@ -277,6 +284,7 @@ html, body {
 .choose-card:last-child {
     border-right: none;
 }
+
 
 
 
@@ -400,6 +408,7 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: #1F3819;
     
 }
 
