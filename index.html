@@ -198,16 +198,18 @@
                         <div class="form-left">
                             <input type="text" placeholder="Nombre Completo">
                             <div class="select-form">
-                                <select><option>Pais</option></select>
-                                <select><option>Estado</option></select>
+                                <select id="estados"><option>Estado</option></select>
+                                <select id="municipios"><option>Municipio</option></select>
                             </div>
                             <textarea placeholder="Deja tu mensaje"></textarea>
                         </div>
                         <div class="form-right">
                             <input type="email" placeholder="correo@correo.com">
                             <div class="select-form">
-                                <select><option>Servicio</option></select>
-                                <select><option>Presupuesto</option></select>
+                                <!-- <select><option>Edad</option></select> -->
+                                 <input type="number" placeholder="Edad">
+                                <!-- <select><option>Ocupacion</option></select> -->
+                                 <input type="text" placeholder="Ocupacion">
                             </div>
                             <input type="tel" placeholder="+52 00 0000 0000">
                             <button type="submit">Enviar</button>
@@ -298,6 +300,6 @@
             </div>
         </div>
     </div>
-    
+    <script src="static/script.js" defer></script>
 </body>
 </html>
