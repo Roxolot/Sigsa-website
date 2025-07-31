@@ -621,3 +621,143 @@ html, body {
     display: flex;
     gap: 18px;
 }
+
+
+/* SEGUROS */
+
+
+
+.banner-section {
+    margin: 0;
+    padding: 0;
+}
+
+
+.banner {
+    height: 100vh;
+    width: auto;
+    justify-content: center;
+    align-items: start;
+    margin-left: 128px;
+    padding-top: 0;
+    margin: 0;
+    color: white;
+}
+
+.banner-bg {
+    background-image: url("./img/bg-hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    position: relative;
+    
+}
+
+.banner-bg::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(8, 33, 41, 0.7);
+    position: absolute;
+}
+
+
+.banner-container {
+    width: 664px;
+    height: 335px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* gap: 1.5rem; */
+    margin-left: 150px;
+    padding: 2rem;
+    z-index: 2;
+}
+.banner-primary-text {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    font-weight: bold;
+}
+
+
+.banner-primary-text p {
+    text-align: start;
+    font-size: 42px;
+}
+
+.banner-secondary-text {
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: -32px;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+.banner-secondary-text p {
+    text-align: start;
+    font-size: 28px;
+}
+
+.seguro-container {
+    display: flex;
+    width: 80%;
+    gap: 90px;
+}
+
+.seguro-imagen {
+    flex: 1;
+}
+.seguro-imagen img{
+    width: 100%;
+    border: 8px solid white;  
+    border-radius: 36px 0px 0px 0px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5); 
+}
+
+.seguro-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 0px;
+    justify-content: center;
+    
+}
+
+.seguro-info p {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    
+}
+
+.seguro-info p:first-child {
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+.seguro-info p:nth-child(2) {
+    margin-bottom:24px;
+    width: 60%;
+}
+.seguro-info p:nth-child(3) {
+    
+}
+.seguro-info ul {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 0px;
+    padding-left: 2em;
+}
+
+.seguro-info li {
+    padding-left: 0px;
+}
+
+.seguro-info button {
+    margin-top: 12px;
+    font-weight: 400;
+}
