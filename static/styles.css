@@ -765,6 +765,7 @@ html, body {
 
 .seguro-imagen {
     flex: 1;
+    border-radius: 36px 0px 0px 0px;
 }
 .seguro-imagen img{
     width: 100%;
