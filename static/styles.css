@@ -623,7 +623,8 @@ html, body {
 }
 
 
-/* SEGUROS */
+/* SERVICIOS */
+
 
 
 
@@ -634,7 +635,7 @@ html, body {
 
 
 .banner {
-    height: 100vh;
+    height: 80vh;
     width: auto;
     justify-content: center;
     align-items: start;
@@ -644,8 +645,8 @@ html, body {
     color: white;
 }
 
-.banner-bg {
-    background-image: url("./img/bg-hero.png");
+.banner-bg-seguros {
+    background-image: url("./img/banner-seguros.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 0;
@@ -653,7 +654,29 @@ html, body {
     
 }
 
-.banner-bg::before {
+.banner-bg-seguros::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(8, 33, 41, 0.7);
+    position: absolute;
+}
+
+.banner-bg-fianzas {
+    background-image: url("./img/banner-fianzas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* mover el bg en caso de que sea necesario */
+    background-position: -50%;
+    /* background-position: center top; */
+    /* background-position: 20%; esta es la otra manera de hacerlo, se puede combinar tambien en plan center 20% o center -40px y asi */
+    z-index: 0;
+    position: relative;
+    
+}
+
+.banner-bg-fianzas::before {
     content: "";
     width: 100%;
     height: 100%;
