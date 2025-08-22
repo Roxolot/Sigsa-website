@@ -817,3 +817,142 @@ html, body {
     margin-top: 12px;
     font-weight: 400;
 }
+
+
+/* aviso de privacidad */
+
+.banner-bg-privacidad {
+    background-color: #7BBD6B;
+}
+
+.column-privacidad {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: left;
+}
+
+.privacidad-banner {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+    width: 85%;
+}
+.privacidad-banner-text {
+    flex: 1;
+    color: black;
+}
+
+.privacidad-banner-text p {
+    width: 30%;
+}
+
+.privacidad-banner-image {
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.privacidad-banner-image img {
+    
+    max-width: 100%;
+    height: auto;
+    
+}
+
+
+.privacidad-tab {
+    margin-top: 12px;
+}
+
+details summary {
+    cursor: pointer;
+    /* font-weight: bold; */
+    font-size: 24px;
+    padding: 20px;
+    /* background: #f0f0f0; */
+    border-radius: 5px;
+    list-style: none;
+    text-align: left;
+    width: 100%;
+    position: relative;
+}
+
+details summary::after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    transform-origin: center;
+    transition: transform 1s ease;
+}
+details[open] summary::after {
+    transform: translateY(-50%) rotate(-135deg);
+}
+
+details[open] summary {
+    /* background: #f5f5f5; */
+
+}
+
+.dotted-border {
+    border: none;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    background-image:
+        linear-gradient(to right, black 0%, transparent 0%),
+        linear-gradient(to right, black 10%, transparent 0%);
+    background-size: 20px 1px;
+    background-repeat: repeat-x;
+    background-position: top left, bottom left;
+}
+
+details {
+    width: 100%;
+    /* border-top: 1px dotted black;
+    border-bottom: 2px dashed black; */
+    margin-bottom: 10px;
+}
+
+details.dotted-border {
+
+}
+
+details p {
+    margin: 12px 34px;
+    padding: 10px;
+    /* background: #fafafa; */
+    /* border-left: 3px solid #0077cc; */
+}
+
+.privacidad-title {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.privacidad-subtitle {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* animacion de la parte interna de las pesta;as */
+.tab-content {
+    transform: scaleY(0);
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 1s ease, max-height 1s ease;
+}
+
+details[open] .tab-content {
+    transform: scaleY(1);
+    opacity: 1;
+}
